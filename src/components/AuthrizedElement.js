@@ -2,7 +2,7 @@ import { useKeycloak } from '@react-keycloak/web';
 
 
 export default function AuthrizedElement({ roles, children }) {
-    const [keycloak, initialized] = useKeycloak()
+    const { keycloak, initialized } = useKeycloak()
 
     const isAutherized = () => {
         if (keycloak && roles) {

@@ -1,0 +1,7 @@
+docker run -d --name keycloak   -p 10001:8080 -v ~/workspace/Robinyo/react-keycloak-theme:/react-keycloak-theme   -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin   jboss/keycloak:9.0.2
+
+https://www.robferguson.org/blog/2020/04/12/keycloak-themes-part-1/
+
+
+
+

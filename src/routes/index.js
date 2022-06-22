@@ -10,7 +10,8 @@ import ProtectedPage from '../pages/ProtectedPage';
 
 
 export const AppRouter = () => {
-    const [, initialized] = useKeycloak();
+    const {  initialized } = useKeycloak();
+    
     if (!initialized) {
         return <h3>Loading ... !!!</h3>;
     }
